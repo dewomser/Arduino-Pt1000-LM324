@@ -8,7 +8,8 @@ jobs:
         with:
           fqbn: 'arduino:avr:uno'
           libraries: |
-            - name: Servo
+            - name: RTDModule
+            - name: rtd
       - uses: actions/upload-artifact@v2
         with:
           name: sketches-reports
